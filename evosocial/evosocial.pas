@@ -10,24 +10,14 @@ Uses
 
 PROCEDURE setup;
 BEGIN
-     read(datos,cantcorr);
-     read(datos,pmutacion);
-     read(datos,pcross);
-     read(datos,maxgen);
-     read(datos,popsize);
+read(datos,cantcorr);
+read(datos,pmutacion);
+read(datos,pcross);
+read(datos,maxgen);
+read(datos,popsize);
 END;
 (*-------------------------------------------------------------*)
 
-
-(*----------------------------------Modelo de Costo --------------------------*)
-FUNCTION modelo_costo(N : INTEGER):REAL;
-VAR
-   costo : REAL;
-BEGIN
-     costo := COSTOgy*N*(2/3+((1/3)*EXP(-0.00174*N*N)));
-     modelo_costo := costo;
-END;
-(*----------------------------------------------------------------------------*)
 
 (*---------------------------------------InicPesos ----------------------------*)
 procedure InicPesos (var cmj:TipoMaqJob);
@@ -243,7 +233,7 @@ PROCEDURE EVOSO;
 
 
 BEGIN
-assign(Datos,'datos.dat');
+assign(Datos,'DATOS.DAT');
 assign(Det,'detalle.txt');
 rewrite(Det);
 assign(Resum,'resumen.txt');

@@ -2,31 +2,19 @@ unit varglo;  {Definiciones globales, usadas por el main y unidades}
 
 interface
 const
-  maxcrom   = 100; {Anterior codigo}
-  maxmaq    = 5;   {Anterior codigo}
-  COSTOgy = 400000;  {Costo de la turbina por aÃ±o}
-  filas = 10;        {Filas del campo}
-  columnas = 10;     {Columnas del campo}
+  maxcrom   = 100;
+  maxmaq    = 5;
 
 type
-      alelotv = array [1..columnas] of byte; {Vector xi fila del campo}
-      individuotv = RECORD
-
-                    END;
-      turbinas_viento =  array [1..filas, 1] of byte;  {Estructura que mantiene el campo de turbinas}
 
       alelo     = byte;  {posicion de bit}
       cromosoma = array[1..maxcrom] of alelo;
 
       individuo = RECORD
-                   cromosoma : cromosoma;
+                   cromosoma: cromosoma;
                    objective,
-                   fitness :real;
+                   fitness:real;
                   END;
-
-      individuot = RECORD
-
-                   END;
       tipoconj  = set of 1..maxcrom;
       hijos     = array [1..2] of individuo;
 

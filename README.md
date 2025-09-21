@@ -34,6 +34,27 @@ El algoritmo EvoSocial original demostró ser innovador al combinar un individuo
 - Facilitar comparación directa con resultados originales en Pascal.
 - Proporcionar arquitectura extensible para variaciones experimentales.
 
+## Dataset de instancias:
+
+El dataset de instancias empleado fue extraido del repositorio JSPLIB "Benchmark instances for the job-shop scheduling problem (minimizing makespan)."
+
+[Repositorio](https://github.com/tamy0612/JSPLIB#)
+
+En el directorio utils se puede encontrar un script Python que realiza la lectura de las instancias disponibles en el repositorio. En nuestro caso convertimos las instancias:
+ - swv06 
+ - swv07 
+ - swv08 
+ - swv09 
+ - swv10
+ - swv11
+ - swv12
+ - swv15
+
+Las mismas se encuentran convertidas al formato que empleamos en el directorio instancias.
+Para la conversión del formato de JSPLIB a nuestro formato empleamos la siguiente instrucción desde el repositorio JSPLIB clonado:
+
+$ python conversion.py
+
 ## Alcance
 
 La implementación se enfoca en Job Shop Scheduling, manteniendo compatibilidad con las instancias de benchmark estándar (100 jobs × 5 máquinas) y extendiendo soporte para instancias de mayor escala. Está dirigido a investigación académica, educación en computación evolutiva y aplicaciones industriales de scheduling.
