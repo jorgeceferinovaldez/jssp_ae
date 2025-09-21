@@ -2,7 +2,7 @@
 
 # Trabajo Práctico Desafío - Algoritmos Evolutivos I
 
-# Evosocial Python 
+# AG Python 
 ## Implementación moderna del algoritmo evolutivo híbrido
 
 ## Integrantes:
