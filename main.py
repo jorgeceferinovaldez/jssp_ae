@@ -722,7 +722,7 @@ def imprimir_detalle() -> None:
     if Det and not Det.closed:
         # Aquí 'mingl' representa el mejor objetivo global hasta el momento,
         # 'gen' es la generación actual, y 'evals' son las evaluaciones acumuladas.
-        Det.write(f"{gen:4d}  {mingl:6.2f} {evals:d}\n")
+        Det.write(f"{gen:4d}  {mingl:6.2f} {evals:d}\n") # Imprime gen, mingl, evals donde gen es la generación actual, mingl es el mejor objetivo global, y evals son las evaluaciones acumuladas.
     else:
         print("ADVERTENCIA: Archivo Det no está abierto o es nulo. No se pudo escribir el detalle de la generación.")
 
@@ -734,7 +734,9 @@ def imprimir_resumen() -> None:
     global Resum, indcorr, ebest, epop, mingl, genmax # Asegurarse de acceder a las variables globales
 
     if Resum and not Resum.closed:
-        Resum.write(f"{indcorr:2d} {ebest:5.2f} {epop:5.2f} {mingl:6.2f} {genmax:4d}\n")
+        # Imprime indcorr es la cantidad de corrida, ebest es el error del mejor individuo, 
+        # epop es el error promedio de la población, mingl es el mejor objetivo global, genmax es la generación en que se encontró el mejor global.
+        Resum.write(f"{indcorr:2d} {ebest:5.2f} {epop:5.2f} {mingl:6.2f} {genmax:4d}\n") # Imprime indcorr, ebest, epop, mingl, genmax
     else:
         print("ADVERTENCIA: Archivo Resum no está abierto o es nulo. No se pudo escribir el resumen final.")
 
