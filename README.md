@@ -1,3 +1,4 @@
+![header](doc/imgs/LogoHeader.png)
 # Maestría en Inteligencia Artificial FIUBA
 
 # Trabajo Práctico Desafío - Algoritmos Evolutivos I
@@ -63,8 +64,75 @@ La implementación se enfoca en Job Shop Scheduling, manteniendo compatibilidad 
 ---
 
 
+## Trabajando con DEAP
 
-TODO: Falta completar
+Este proyecto implementa un Algoritmo Genético (GA) utilizando DEAP
+```
+tpfinal/
+├── ga_deap.py
+├── instancias/
+│   ├── 100X5-10.txt
+│   ├── ... (otros archivos de instancias)
+├── evolution_<instancia>.png  # Gráficos generados
+├── jssp_results.csv           # Resumen de resultados
+```
+
+Instalar dependencias:
+```
+pip install deap numpy pandas matplotlib seaborn
+```
+### Formato de Archivo de Instancia
+
+* Línea 1: Mejor valor obtenido (entero, ignorado por el GA)
+
+* Línea 2: Segundo valor (entero, ignorado por el GA)
+
+* Línea 3 en adelante: Cada línea representa un trabajo (job), con pares de [máquina] [tiempo_de_proceso] (enteros).
+
+Ejemplo:
+
+```
+5328
+5272
+88 11 99 20 63 67 79 91 13 77 ...
+43 9 81 83 90 44 60 70 85 11 ...
+```
+
+### Cómo Ejecutar
+
+1. Coloca tus archivos de instancia .txt en la carpeta instancias/.
+
+2. Ejecuta el script desde el directorio del proyecto:
+
+```
+python ga_deap.py
+```
+
+3. El script realizará las siguientes acciones:
+
+* Procesará cada archivo de instancia
+
+* Ejecutará el algoritmo genético
+
+* Guardará los gráficos de evolución (evolution_<instancia>.png)
+
+* Guardará los resultados en jssp_results.csv
+
+* Mostrará un resumen en la consola
+
+### Resultados
+
+* Gráficos: Evolución del makespan por generación para cada instancia.
+
+* CSV: Resumen del mejor makespan y la secuencia óptima encontrada para cada instancia.
+
+### Solución de Problemas
+
+* Si aparece un error como “list assignment index out of range”, revisa el formato del archivo de instancia.
+
+* Asegúrate de que todos los trabajos tengan el mismo número de pares máquina/tiempo.
+
+* Si aparece “Instance must have at least one job”, revisa que el archivo no tenga líneas vacías o datos faltantes.
 
 ## Licencia
 
@@ -80,3 +148,4 @@ Licencia MIT - ver archivo LICENSE para detalles.
 ## Documentación
 
 Para guías detalladas, consulta la documentación del código fuente.
+![header](doc/imgs/LogoFooter.png)
