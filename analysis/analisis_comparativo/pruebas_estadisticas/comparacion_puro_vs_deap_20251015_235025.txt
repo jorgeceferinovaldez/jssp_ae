@@ -1,0 +1,94 @@
+Comparación Estadística: puro vs deap
+======================================================================
+Fecha: 2025-10-15 23:50:25
+
+Resumen Global:
+  Instancias analizadas: 3
+  Diferencias significativas: 3/3
+  Victorias deap (calidad): 0/3
+
+Tiempos Promedio:
+  puro: 1780.97s (29.68 min)
+  deap: 1670.48s (27.84 min)
+  Mejora promedio: +6.20%
+
+======================================================================
+
+Instancia: swv06
+--------------------------------------------------
+puro:
+  Mejor:    2053.00
+  Media:    2075.17 ± 11.87
+  Mediana:  2077.00
+  GenMax:   242.8
+  Tiempo:   1777.81s
+
+deap:
+  Mejor:    2376.00
+  Media:    2641.70 ± 95.15
+  Mediana:  2658.50
+  GenMax:   453.1
+  Tiempo:   1685.69s
+\Comparación:
+  Mejora Media:   -27.30%
+  Mejora Mejor:   -15.73%
+  Mejora GenMax:  -86.65%
+  Mejora Tiempo:  +5.18%
+  P-value (Wilcoxon):     0.0000
+  P-value (Mann-Whitney): 0.0000
+  Significativo: SÍ
+  Mejor: puro
+==================================================
+
+Instancia: swv08
+--------------------------------------------------
+puro:
+  Mejor:    2153.00
+  Media:    2174.97 ± 9.89
+  Mediana:  2176.50
+  GenMax:   234.7
+  Tiempo:   1792.51s
+
+deap:
+  Mejor:    2466.00
+  Media:    2691.17 ± 96.62
+  Mediana:  2718.50
+  GenMax:   455.9
+  Tiempo:   1664.56s
+\Comparación:
+  Mejora Media:   -23.73%
+  Mejora Mejor:   -14.54%
+  Mejora GenMax:  -94.23%
+  Mejora Tiempo:  +7.14%
+  P-value (Wilcoxon):     0.0000
+  P-value (Mann-Whitney): 0.0000
+  Significativo: SÍ
+  Mejor: puro
+==================================================
+
+Instancia: swv07
+--------------------------------------------------
+puro:
+  Mejor:    1934.00
+  Media:    1973.93 ± 16.31
+  Mediana:  1973.50
+  GenMax:   260.8
+  Tiempo:   1772.59s
+
+deap:
+  Mejor:    2367.00
+  Media:    2515.60 ± 88.95
+  Mediana:  2512.00
+  GenMax:   445.0
+  Tiempo:   1661.19s
+\Comparación:
+  Mejora Media:   -27.44%
+  Mejora Mejor:   -22.39%
+  Mejora GenMax:  -70.59%
+  Mejora Tiempo:  +6.28%
+  P-value (Wilcoxon):     0.0000
+  P-value (Mann-Whitney): 0.0000
+  Significativo: SÍ
+  Mejor: puro
+==================================================
+

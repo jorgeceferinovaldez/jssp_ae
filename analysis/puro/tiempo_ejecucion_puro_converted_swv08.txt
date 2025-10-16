@@ -1,0 +1,2 @@
+Instancia: converted_swv08
+Tiempo de ejecución: 1792.51 segundos

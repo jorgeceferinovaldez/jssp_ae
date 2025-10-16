@@ -1,3 +1,5 @@
+import os
+import time
 import random
 import sys
 import numpy as np
@@ -370,7 +372,7 @@ def setup(archivo_datos: str = 'DATOS.DAT'):
 def inicializar_archivos(
     archivo_detalle: str = 'detalle.txt',
     archivo_resumen: str = 'resumen.txt',
-    archivo_instancia: str = '100X5-10.txt'
+    #archivo_instancia: str = '100X5-10.txt'
 ):
     """
     Inicializa los archivos de salida.
@@ -384,12 +386,12 @@ def inicializar_archivos(
 
     Det = open(archivo_detalle, 'w', encoding='utf-8')
     Resum = open(archivo_resumen, 'w', encoding='utf-8')
-    Ins = open(archivo_instancia, 'r', encoding='utf-8')
+    #Ins = open(archivo_instancia, 'r', encoding='utf-8')
 
     print("Archivos inicializados:")
     print(f"  Detalle: {archivo_detalle}")
     print(f"  Resumen: {archivo_resumen}")
-    print(f"  Instancia: {archivo_instancia}")
+    #print(f"  Instancia: {archivo_instancia}")
 
 def inicializar_sistema(archivo_datos: str = 'DATOS.DAT'):
     """
@@ -399,7 +401,7 @@ def inicializar_sistema(archivo_datos: str = 'DATOS.DAT'):
         archivo_datos: Archivo con parámetros de configuración
     """
     setup(archivo_datos)
-    inicializar_archivos()
+    #inicializar_archivos()
 
 def cerrar_archivos():
     """Cierra todos los archivos abiertos de manera segura."""
@@ -426,7 +428,7 @@ def leer_instancia():
     Formato esperado:
     - Línea 1: upperb
     - Línea 2: lowerb  
-    - Líneas 3-7: 100 valores cada una (5 máquinas x 100 trabajos)
+    - Líneas 3-7: 100 valores cada una (5 máquinas x 100 trabajos) Depende de la instancia.
     """
     global upperb, lowerb, Ins, Cmj
     
@@ -440,7 +442,7 @@ def leer_instancia():
         print(f"lowerb leído: {lowerb}")
         
         # Leer matriz de máquinas-trabajos
-        for i in range(1, MAX_MAQ + 1):  # máquinas 1 a 5
+        for i in range(1, MAX_MAQ + 1):  # máquinas 1 a 15
             linea = Ins.readline().strip()
             if not linea:
                 raise ValueError(f"Archivo termina inesperadamente en máquina {i}")
@@ -451,7 +453,7 @@ def leer_instancia():
                 raise ValueError(f"Máquina {i}: se esperaban {MAX_CROM} valores, se encontraron {len(valores)}")
                 
             # Llenar la fila i de la matriz
-            for j in range(1, MAX_CROM + 1):  # trabajos 1 a 100
+            for j in range(1, MAX_CROM + 1):  # trabajos 1 a 20
                 Cmj[i, j] = valores[j-1]  # valores está en base 0
                 
         print(f"Matriz {MAX_MAQ}x{MAX_CROM} cargada correctamente")
@@ -712,7 +714,7 @@ def next_generacion() -> None:
 
 # Suponiendo que estas funciones imprimir_detalle y imprimir_resumen existen o serán creadas.
 # Si no las tienes, estas son versiones placeholder:
-def imprimir_detalle() -> None:
+def imprimir_detalle(detalle_archivo: str) -> None:
     """
     Imprime una línea de detalle en el archivo de detalle (Det) para la generación actual.
     Equivalente a PROCEDURE imprimir_detalle en Pascal.
@@ -726,7 +728,7 @@ def imprimir_detalle() -> None:
     else:
         print("ADVERTENCIA: Archivo Det no está abierto o es nulo. No se pudo escribir el detalle de la generación.")
 
-def imprimir_resumen() -> None:
+def imprimir_resumen(resumen_archivo: str) -> None:
     """
     Imprime una línea de resumen en el archivo de resumen (Resum) al final de una corrida.
     Equivalente a PROCEDURE imprimir_resumen en Pascal.
@@ -740,7 +742,7 @@ def imprimir_resumen() -> None:
     else:
         print("ADVERTENCIA: Archivo Resum no está abierto o es nulo. No se pudo escribir el resumen final.")
 
-def evoso():
+def evoso(detalle_archivo: str, resumen_archivo: str) -> None:
     """
     Implementa el algoritmo genético principal (EVOSO) como se especifica en Pascal.
     Gestiona las generaciones, la evolución de la población y la recopilación de estadísticas.
@@ -793,7 +795,7 @@ def evoso():
 
         evals += popsize # evals := evals + popsize; (Cada individuo evaluado en next_generacion)
 
-        imprimir_detalle() # Llama a la función para imprimir detalles (si está implementada)
+        imprimir_detalle(detalle_archivo) # Llama a la función para imprimir detalles (si está implementada)
         print(f"Generación {gen:4d} - Mejor Global: {mingl:6.2f} - Mejor de Gen: {min_val:6.2f} - Avg de Gen: {avg:6.2f}")
         
         gen += 1 # gen := gen + 1;
@@ -811,24 +813,40 @@ def evoso():
     print(f"Error del mejor individuo (ebest): {ebest:.2f}%")
     print(f"Error promedio de la población (epop): {epop:.2f}%")
 
-    imprimir_resumen() # Llama a la función para imprimir el resumen final
+    imprimir_resumen(resumen_archivo) # Llama a la función para imprimir el resumen final
 
 if __name__ == "__main__":
     
+    dir_instancias = 'instancias'
+    #archivo_instancia = 'converted_swv06.txt'
+    #archivo_instancia = 'converted_swv07.txt'
+    archivo_instancia = 'converted_swv08.txt'
+    ruta_completa_instancia = os.path.join('..', dir_instancias, archivo_instancia) 
+
+    detalle_archivo = "detalle_converted_" + archivo_instancia 
+    resumen_archivo = "resumen_converted_" + archivo_instancia 
+
+    # Inicio medida de tiempo
+    start_time = time.time()
+
     try:
         print("Iniciando sistema...")
         inicializar_sistema()
         print(f"Sistema listo. Población: {popsize}, Generaciones: {maxgen}")
+
+        inicializar_archivos(detalle_archivo, resumen_archivo)
         
         #Ins = open('./instancias/100X5-10.txt', 'r', encoding='utf-8')
-        Ins = open('./instancias/converted_swv06.txt', 'r', encoding='utf-8')
+        #Ins = open('./instancias/converted_swv06.txt', 'r', encoding='utf-8')
+        #Ins = open(f'../{dir_instancias}/{archivo_instancia}', 'r', encoding='utf-8')
+        Ins = open(ruta_completa_instancia, 'r', encoding='utf-8')
         print("Leyendo archivo de instancia...")
         leer_instancia()
 
         print("\n=== Test: Ejecutar Algorimo Genético ===")
         for indcorr in range(0, cantcorr):
             print(f"\n--- Corrida {indcorr}/{cantcorr} ---")
-            evoso()
+            evoso(detalle_archivo, resumen_archivo)
         
     except TypeError as e: 
         print(f"Ocurrió un error de tipo: {e}")
@@ -838,3 +856,14 @@ if __name__ == "__main__":
         cerrar_archivos()
 
     print("Ejecución finalizada.")
+
+# Fin medida de tiempo
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    # Guardo en archivo de resumen el tiempo total correspondiente a la instancia
+    #archivo_resumen = 'resumen_tiempo_' + archivo_instancia
+    archivo_tiempo = "tiempo_ejecucion_puro_"+ archivo_instancia
+    print(archivo_tiempo)
+    with open(archivo_tiempo, "w", encoding="utf-8") as f:
+        f.write(f"Instancia: {archivo_instancia}\n")
+        f.write(f"Tiempo de ejecución: {elapsed_time:.2f} segundos\n")

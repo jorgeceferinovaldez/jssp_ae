@@ -1,0 +1,16 @@
+# Requirements for JSSP Evosocial Algorithm Project
+# Maestría en Inteligencia Artificial FIUBA - Algoritmos Evolutivos I
+
+# Core scientific computing
+numpy>=1.21.0
+
+# Evolutionary algorithms framework (for DEAP implementation)
+deap>=1.3.1
+
+# Statistical analysis
+scipy>=1.7.0
+pandas>=1.3.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0

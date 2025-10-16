@@ -1,0 +1,2 @@
+Instancia: converted_swv06.txt
+Tiempo de ejecución: 1685.69 segundos
