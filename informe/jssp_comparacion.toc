@@ -35,21 +35,21 @@
 \contentsline {subsubsection}{\numberline {5.2.3}Instancia swv08}{10}{subsubsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.3}Análisis de convergencia}{10}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Distribución de resultados}{10}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Significancia estadística}{11}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Discusión}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Interpretación de resultados}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {5.5}Significancia estadística}{12}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Discusión}{12}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Interpretación de resultados}{12}{subsection.6.1}%
 \contentsline {subsubsection}{\numberline {6.1.1}Superioridad de Python puro en calidad}{12}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Convergencia más temprana}{12}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Consistencia y robustez}{12}{subsubsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.2}Trade-off tiempo vs calidad}{12}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.1.2}Convergencia más temprana}{13}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Consistencia y robustez}{13}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.2}Trade-off tiempo vs calidad}{13}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Implicaciones del framework DEAP}{13}{subsection.6.3}%
 \contentsline {subsubsection}{\numberline {6.3.1}Ventajas de DEAP}{13}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Limitaciones en JSSP}{13}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Recomendaciones prácticas}{13}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Para investigación académica}{13}{subsubsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.2}Para aplicaciones industriales}{13}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.3.2}Limitaciones en JSSP}{14}{subsubsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.4}Recomendaciones prácticas}{14}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Para investigación académica}{14}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Para aplicaciones industriales}{14}{subsubsection.6.4.2}%
 \contentsline {subsection}{\numberline {6.5}Limitaciones del estudio}{14}{subsection.6.5}%
 \contentsline {subsection}{\numberline {6.6}Trabajo futuro}{14}{subsection.6.6}%
 \contentsline {subsubsection}{\numberline {6.6.1}Extensiones inmediatas}{14}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Investigación avanzada}{14}{subsubsection.6.6.2}%
-\contentsline {section}{\numberline {7}Conclusiones}{14}{section.7}%
+\contentsline {subsubsection}{\numberline {6.6.2}Investigación avanzada}{15}{subsubsection.6.6.2}%
+\contentsline {section}{\numberline {7}Conclusiones}{15}{section.7}%

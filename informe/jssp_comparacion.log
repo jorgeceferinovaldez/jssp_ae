@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.24)  16 OCT 2025 01:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.24)  16 OCT 2025 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -652,11 +652,19 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
@@ -669,26 +677,26 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `jssp_comparacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -746,7 +754,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring ON on input line 38.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -758,9 +766,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count325
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./jssp_comparacion.out) (./jssp_comparacion.out)
 \@outlinefile=\write4
@@ -771,15 +779,15 @@ Package caption Info: End \AtBeginDocument code.
 <Figuras/uba.png, id=224, 653.44125pt x 188.705pt>
 File: Figuras/uba.png Graphic file (type png)
 <use Figuras/uba.png>
-Package pdftex.def Info: Figuras/uba.png  used on input line 44.
+Package pdftex.def Info: Figuras/uba.png  used on input line 45.
 (pdftex.def)             Requested size: 273.14923pt x 78.88123pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 58.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 58.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -818,7 +826,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
@@ -889,14 +897,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Figuras/convergencia_comparativa.png Graphic file (type png)
 <use Figuras/convergencia_comparativa.png>
 Package pdftex.def Info: Figuras/convergencia_comparativa.png  used on input li
-ne 439.
+ne 440.
 (pdftex.def)             Requested size: 455.24411pt x 124.25967pt.
-<Figuras/comparativa_completa.png, id=375, 1293.633pt x 859.7721pt>
-File: Figuras/comparativa_completa.png Graphic file (type png)
-<use Figuras/comparativa_completa.png>
-Package pdftex.def Info: Figuras/comparativa_completa.png  used on input line 4
-57.
-(pdftex.def)             Requested size: 455.24411pt x 302.56462pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -907,6 +909,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10 <./Figuras/convergencia_comparativa.png>]
+<Figuras/comparativa_completa.png, id=383, 1293.633pt x 859.7721pt>
+File: Figuras/comparativa_completa.png Graphic file (type png)
+<use Figuras/comparativa_completa.png>
+Package pdftex.def Info: Figuras/comparativa_completa.png  used on input line 4
+59.
+(pdftex.def)             Requested size: 455.24411pt x 302.56462pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -915,7 +924,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./Figuras/comparativa_completa.png>]
+[11
+
+ <./Figuras/comparativa_completa.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -924,7 +935,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[12
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -968,10 +981,10 @@ Package rerunfilecheck Info: File `jssp_comparacion.out' has not changed.
 (rerunfilecheck)             Checksum: DD19BD46B6E1E6418D873E3F8728F918;9227.
  ) 
 Here is how much of TeX's memory you used:
- 23566 strings out of 480071
- 435128 string characters out of 5891616
- 719874 words of memory out of 5000000
- 41025 multiletter control sequences out of 15000+600000
+ 23625 strings out of 480071
+ 436655 string characters out of 5891616
+ 720420 words of memory out of 5000000
+ 41077 multiletter control sequences out of 15000+600000
  477787 words of font info for 59 fonts, out of 8000000 for 9000
  107 hyphenation exceptions out of 8191
  84i,13n,80p,1073b,683s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -987,7 +1000,7 @@ blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on jssp_comparacion.pdf (17 pages, 1398277 bytes).
+Output written on jssp_comparacion.pdf (17 pages, 1398088 bytes).
 PDF statistics:
  514 PDF objects out of 1000 (max. 8388607)
  461 compressed objects within 5 object streams

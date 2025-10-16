@@ -15,6 +15,7 @@
 \usepackage{subcaption}
 \usepackage{fancyhdr}
 \usepackage{tikz}
+\usepackage{pdflscape}
 \usetikzlibrary{calc}
 
 % Configuración de hipervínculos
@@ -432,7 +433,7 @@ $p$-value (Mann-Whitney) & \multicolumn{2}{c}{$< 0.0001$ ***} \\
 
 \subsection{Análisis de convergencia}
 
-La Figura \ref{fig:convergencia} muestra la evolución del mejor makespan a lo largo de las generaciones para ambas implementaciones en las tres instancias.
+La figura \ref{fig:convergencia} muestra la evolución del mejor makespan a lo largo de las generaciones para ambas implementaciones en las tres instancias.
 
 \begin{figure}[H]
     \centering
@@ -450,14 +451,16 @@ Se observa que:
 
 \subsection{Distribución de resultados}
 
-La Figura \ref{fig:distribucion} presenta box plots y violin plots comparativos de la distribución de makespan.
+La figura \ref{fig:distribucion} presenta box plots y violin plots comparativos de la distribución de makespan.
 
+\begin{landscape}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{Figuras/comparativa_completa.png}
     \caption{Análisis comparativo completo: (a) Distribución de makespan, (b) Distribución detallada, (c) Ventaja porcentual de Python puro, (d) Tiempos de ejecución, (e) Diferencia de tiempos, (f) Trade-off tiempo vs calidad.}
     \label{fig:distribucion}
 \end{figure}
+\end{landscape}
 
 Observaciones clave:
 \begin{itemize}
